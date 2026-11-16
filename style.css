@@ -1,0 +1,142 @@
+
+body {
+    margin: 0;
+    font-family: 'Times New Roman';
+    background-color: rgb(255, 227, 224);
+    color: rgb(47, 79, 79);
+}
+
+#profile-header {
+    background-color: rgb(241, 215, 219);
+    text-align: center;
+    padding: 30px;
+    border-bottom: 4px solid rgb(143, 188, 143);
+}
+
+
+#profile-header h1 {
+    margin: 0;
+    color: rgb(220, 121, 154);
+    font-size: 50px;
+}
+
+
+.job-title {
+    font-size: 20px;
+    color: rgb(105, 105, 105);
+}
+
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    margin: 10px;
+    color: rgb(46, 139, 87);
+    font-weight: bold;
+}
+
+
+nav a:hover {
+    color: rgb(255, 20, 147);
+}
+
+
+.cv-container {
+    width: 80%;
+    margin: 30px auto;
+}
+
+
+.cv-section {
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    margin-bottom: 30px;
+    border: 2px solid rgb(143, 188, 143);
+}
+
+
+.cv-section h2 {
+    color: rgb(216, 112, 147);
+}
+ 
+
+
+#about {
+    background-color: rgb(255, 240, 245);
+}
+
+
+.education-item {
+    padding: 10px;
+    border-left: 4px solid rgb(143, 188, 143);
+}
+
+
+.skills-list {
+    padding-left: 25px;
+}
+
+.skills-list li {
+    margin-bottom: 10px;
+}
+
+
+.project-card {
+    background-color: rgb(245, 245, 245);
+    padding: 15px;
+    border-left: 4px solid rgb(216, 112, 147);
+}
+
+.project-card a {
+    color: rgb(46, 139, 87);
+}
+
+.project-card a:hover {
+    color: rgb(255, 20, 147);
+}
+
+
+#contact a {
+    color: rgb(46, 139, 87);
+}
+
+
+#contact a:hover {
+   
+    color: rgb(255, 20, 147)
+}
+
+
+footer {
+    background-color: rgb(150, 195, 150);
+    color: rgba(255, 255, 255, 0.938);
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+
+@media (max-width: 768px) {
+    
+
+    .cv-container {
+        width: 90%;
+    }
+
+    #profile-header h1 {
+        font-size: 30px;
+    }
+
+    nav a {
+        display: block;
+        margin: 8px;
+    }
+
+    .cv-section {
+        padding: 15px;
+    }
+
+
+}
