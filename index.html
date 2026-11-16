@@ -12,6 +12,10 @@
 
     <button id="theme-btn" type="button">Dark Mode</button>
 
+    
+    <button id="print-btn" type="button">Print / Save as PDF</button>
+
+
     <header id="profile-header">
 
         <h1>Tala Albadi</h1>
@@ -28,15 +32,25 @@
 
     <main class="cv-container">
 
-        <section id="about" class="cv-section">
-            <h2>About Me</h2>
-            <p>
-                I am a senior Information Technology student at King Abdulaziz University with an interest in
-        data analysis, system analysis, UI/UX design, web development, and lastly project management. I enjoy gaining new
-       skills and trying out new things.
-      
-            </p>
-        </section>
+        
+<section id="about" class="cv-section">
+    <h2>About Me</h2>
+
+    <p>
+        I am a senior Information Technology student at
+        King Abdulaziz University.
+    </p>
+
+    <p id="more-about" hidden>
+        I am interested in data analysis, system analysis,
+        UI/UX design, web development, and project management.
+        I enjoy gaining new skills and trying new things.
+    </p>
+
+    <button id="about-btn" type="button">Show More</button>
+
+</section>
+
 
         <section id="education" class="cv-section">
             <h2>Education</h2>
@@ -104,6 +118,22 @@
     </article>
 
 </section>
+
+
+
+<section id="projects" class="cv-section">
+    <h2>Projects</h2>
+
+    <div class="project-filters">
+        <button id="all-btn" type="button">All</button>
+        <button id="web-btn" type="button">Web</button>
+        <button id="programming-btn" type="button">Programming</button>
+    </div>
+
+    <div id="projects-container"></div>
+</section>
+
+
 
         <section id="contact" class="cv-section">
             <h2>Contact</h2>

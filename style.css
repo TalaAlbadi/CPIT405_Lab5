@@ -139,4 +139,134 @@ footer {
     }
 
 
+    /* LAB 5 dark mode addition*/
+
+    #theme-btn {
+        display: block;
+        margin: 15px auto;
+        padding: 10px 20px;
+        background-color: #333;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    body.dark-mode {
+        background-color: #181818;
+        color: white;
+    }
+
+    body.dark-mode .cv-section {
+        background-color: #292929;
+        color: white;
+    }
+
+    body.dark-mode .project-card {
+        background-color: #383838;
+        color: white;
+    }
+
+    body.dark-mode a {
+        color: #8fcaff;
+    }
+
+
+
+/* LAB 5 - dynamic projects */
+
+#projects-container {
+    display: grid;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+#projects-container .project-card {
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+#projects-container .project-card h3 {
+    margin-top: 0;
+}
+
+
+
+/* Task 4  */
+
+.project-filters {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.project-filters button {
+    padding: 10px 20px;
+    background-color: #c76b90;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.project-filters button:hover {
+    background-color: #a84c72;
+}
+
+
+
+/* TASK 5 */
+
+#print-btn {
+    display: block;
+    margin: 15px auto;
+    padding: 10px 20px;
+    background-color: #c76b90;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#print-btn:hover {
+    background-color: #a84c72;
+}
+
+/* Print Styling */
+
+@media print {
+
+    body,
+    body.dark-mode {
+        background: white !important;
+        color: black !important;
+    }
+
+    .cv-section,
+    body.dark-mode .cv-section,
+    .project-card,
+    body.dark-mode .project-card {
+        background: white !important;
+        color: black !important;
+        box-shadow: none !important;
+    }
+
+    #theme-btn,
+    #about-btn,
+    #print-btn,
+    .project-filters,
+    nav {
+        display: none !important;
+    }
+
+    .cv-section,
+    .project-card {
+        break-inside: avoid;
+    }
+}
+
+
 }
